@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rejestracja</title>
+</head>
+
+<body>
+
+<h1>Rejestracja użytkownika</h1>
+
+<form method="post">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">
+        Załóż konto
+    </button>
+
+</form>
+
+<br>
+
+<a href="/login/">
+    Mam już konto
+</a>
+
+</body>
+
+</html>
